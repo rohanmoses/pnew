@@ -1,0 +1,46 @@
+#include <time.h> int main()
+5 - 1
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+time_t sec;
+time(&sec);
+int hour, seco, min;
+char a[2];
+struct tm *p1-localtime (&sec);
+hour = p1-›tm_hour+5%24; min = p1-›tm_min+30%60; seco = p1-›tm_sec;
+/*if (hour›0&&hour<12)
+a=am;
+16
+else
+17
+18
+19
+20
+21
+22
+23
+*
+printf ("Time is -> %02d:%02d:%82d" , hour, min, seco);
+if (hour>0&&hour<12)
+printf(" \nGood Morning");
+else if(hour›=128&hour<18)
+printf("\nGood Afternoon");
+else
+24
+printf(" \nGood Evening");
+25
+26
+27
+//printf("%s", ctime(&sec));
+28 - /*struct tm *timeStruct;
+29
+30
+sec = time (NULL);
